@@ -1,6 +1,34 @@
 'use strict';
 {
 
+    class omikuji {
+        constructor (){
+            // const main = document.createElement('main');
+            const section = document.createElement('section');
+            // section.classList.add('panel');
+
+            this.h1 = document.createElement('h1');
+            this.h1.textContent = '今日の運勢は？';
+
+            this.p = document.createElement('p');
+            this.p.textContent = '?';
+            this.p.setAttribute('id', 'result');
+
+            section.appendChild(this.h1);
+            section.appendChild(this.p);
+
+            const main = document.querySelector('main');
+            main.appendChild(section);
+            // this.button = document.createElement('button');
+            // this.button.textContent = 'ひけぃ！';
+            // this.button.setAttribute('id', 'btn');
+
+            // main.appendChild(section);
+            // main.appendChild(this.button);
+        }
+    }
+
+    const omikujes = new omikuji();
 
     const btn =document.getElementById('btn');
     const result = document.getElementById('result');
@@ -25,4 +53,5 @@
         //         break;
         // }
     });
+
 }

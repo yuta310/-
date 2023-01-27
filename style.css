@@ -28,13 +28,17 @@ p {
 
 button {
     all: unset;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 240px;
     background-color: red;
     border-radius: 8px;
     color: white;
     text-align: center;
     padding: 8px 0;
     margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
     cursor: pointer;
     box-shadow: 0 4px #7a0000;
 }
@@ -47,3 +51,4 @@ button:active {
     box-shadow: 0 1px #7a0000;
     transform: translate(3px);
 }
+
